@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio | Daniel López de Pablo Oviedo</title>
+    <meta name="description" content="Portfolio de Daniel López de Pablo Oviedo. Solution Architect especializado en e-commerce (Salesforce Commerce Cloud)." />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header">
+        <div class="container header-grid">
+            <nav class="nav">
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#experience" data-i18n="nav.experience">Experience</a>
+                <a href="#clients" data-i18n="nav.clients">Clients</a>
+                <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+
+                <div class="lang" role="group" aria-label="Language">
+                    <button type="button" class="lang-btn" id="langES" aria-pressed="true">ES</button>
+                    <button type="button" class="lang-btn" id="langEN" aria-pressed="false">EN</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1 data-i18n="hero.title">Soluciones e-commerce escalables, rápidas y listas para producción.</h1>
+                    <p class="lead" data-i18n="hero.lead">
+                        Más de 8 años de experiencia desarrollando ecommerce websites. En los últimos 6, liderando equipos como
+                        Solution Architect / Technical Lead en Salesforce Commerce Cloud.
+                    </p>
+
+                    <div class="badges" aria-label="Resumen rápido">
+                        <div class="badge">
+                            <div class="badge-k" data-i18n="hero.badge1.k">8+ años</div>
+                            <div class="badge-v" data-i18n="hero.badge1.v">experiencia e-commerce</div>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-k" data-i18n="hero.badge2.k">6 años</div>
+                            <div class="badge-v" data-i18n="hero.badge2.v">liderando equipos</div>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-k" data-i18n="hero.badge3.k">SFCC</div>
+                            <div class="badge-v" data-i18n="hero.badge3.v">especialización principal</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="profile">
+                        <div class="avatar" aria-hidden="true">
+                            <img src="img/profile.jpg" alt="Foto de Daniel López de Pablo Oviedo" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="profile-meta">
+                            <div class="profile-name">Daniel López de Pablo Oviedo</div>
+                            <div class="profile-role" data-i18n="profile.role">Solution Architect (Freelancer) · Kodly</div>
+                        </div>
+                    </div>
+
+                    <ul class="facts">
+                        <li><span class="dot"></span><span data-i18n="profile.location">Barcelona, Catalonia, Spain</span></li>
+                        <li><span class="dot"></span><span data-i18n="profile.languages">Idiomas: Español / Inglés (bilingüe)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2 data-i18n="about.title">About</h2>
+                </div>
+
+                <div class="grid grid-3">
+                    <article class="panel">
+                        <h3 data-i18n="about.focusTitle">Especialidad</h3>
+                        <ul id="focusList"></ul>
+                    </article>
+
+                    <article class="panel">
+                        <h3 data-i18n="about.certsTitle">Certificaciones</h3>
+                        <ul id="certList"></ul>
+                    </article>
+
+                    <article class="panel">
+                        <h3 data-i18n="about.eduTitle">Educación</h3>
+                        <ul id="eduList"></ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2 data-i18n="exp.title">Experiencia</h2>
+                </div>
+
+                <div id="experienceList" class="grid"></div>
+            </div>
+        </section>
+
+        <section id="clients" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2 data-i18n="clients.title">Clients</h2>
+                </div>
+
+                <div id="clientsList" class="grid" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section id="reviews" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2 data-i18n="reviews.title">Reviews</h2>
+                </div>
+
+                <div class="reviews-wrap">
+                    <button class="reviews-btn" id="reviewsPrev" type="button" aria-label="Previous">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M15.5 5.5L9 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div id="reviewsList" class="reviews-track" role="region" aria-label="Reviews"></div>
+                    <button class="reviews-btn" id="reviewsNext" type="button" aria-label="Next">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M8.5 5.5L15 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-bottom-spacer" aria-hidden="true"></div>
+    </main>
+
+    <div class="contact-banner" role="region" aria-label="Contact">
+        <div class="container contact-banner-inner">
+            <div class="contact-banner-left">
+                <div class="contact-banner-title" data-i18n="banner.title">¿Te encaja mi perfil?</div>
+                <div class="contact-banner-sub" data-i18n="banner.sub">Escríbeme por LinkedIn y te respondo rápido.</div>
+            </div>
+
+            <a id="linkedinCta" class="btn" href="https://www.linkedin.com/in/daniel-lopez-de-pablo/?locale=es_ES" target="_blank" rel="noreferrer">
+                <span data-i18n="banner.cta">Contactar en LinkedIn</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
