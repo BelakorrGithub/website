@@ -737,6 +737,26 @@ a {
         grid-template-columns: 1fr;
     }
 
+    .hero-copy {
+        display: contents;
+    }
+
+    .hero h1 {
+        order: 1;
+    }
+
+    .lead {
+        order: 2;
+    }
+
+    .hero-card {
+        order: 3;
+    }
+
+    .badges {
+        order: 4;
+    }
+
     .grid {
         grid-template-columns: 1fr;
     }
